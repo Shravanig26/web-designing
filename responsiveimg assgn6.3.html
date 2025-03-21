@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.responsive-image {
+    position: relative;
+}
+
+.default-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+.small-screen-image {
+    display: none;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Media query for screen width below 700px */
+@media screen and (max-width: 700px) {
+    .default-image {
+        display: none;
+    }
+    .small-screen-image {
+        display: block;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="responsive-image">
+        <img src="pexels-nietjuh-2008136.jpg" alt="Responsive Image" class="default-image">
+        <img src="pexels-pixabay-459403.jpg" alt="Responsive Image" class="small-screen-image">
+    </div>
+</body>
+</html>
