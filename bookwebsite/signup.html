@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+        margin-top: 50px;
+    }
+    .login-container {
+        background-color: #3e1414; /* Burgundy */
+        max-width: 400px;
+        max-height: 100%;
+        margin: 100px;
+        padding: 50px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        color: #fff;
+        float:right;
+        
+    }
+    .login-container h2 {
+        text-align: center;
+    }
+    .login-container input[type="text"],
+    .login-container input[type="password"],
+    .login-container input[type="confirm password"],
+    .login-container input[type="email"],
+    .login-container input[type="phone"] {
+        width: 89%;
+        padding: 15px;
+        margin: 8px;
+        border: none;
+        border-radius: 4px;
+    }
+    .login-container input[type="submit"] {
+    display: inline-block;
+    padding: 15px;
+    background-color: white; /* Burgundy */
+    color: black; /* White */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 150px;
+    margin-top: 5px;
+    
+    }
+    .login-container .links {
+        text-align: center;
+        margin-top: 15px;
+    }
+    .login-container .links a {
+        color: #fff;
+        text-decoration: none;
+        margin:10px;
+    }
+</style>
+</head>
+<body background="books.jpg">
+    <div class="login-container">
+        <h2>Signup to Your Account</h2>
+        <form action="#" method="post">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="confirm password" name="confirm password" placeholder="confirm password" required>
+            <input type="email" name="email" placeholder="email" required>
+            <input type="Phone" name="tel" placeholder="phone no." required>
+            <input type="submit" value="Signup">
+        </form>
+        <div class="links">
+            <a href="#">Forgot password?</a>
+            <span>|</span>
+            <a href="#">Create an account</a>
+        </div>
+    </div>
+</body>
+</html>

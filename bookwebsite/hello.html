@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library Navigation Bar</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Style */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #800020; /* Burgundy */
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        /* Logo/Website Name */
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* Navigation Links */
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 12px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-links li a:hover {
+            background-color: #990033; /* Lighter Burgundy */
+            border-radius: 4px;
+        }
+
+        /* Search Bar */
+        .search-bar input {
+            padding: 6px;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+
+        /* Login/Signup Button */
+        .login-btn {
+            background-color: black;
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .login-btn:hover {
+            background-color: #333333; /* Darker shade of black */
+        }
+
+        /* Responsive Design: Toggle checkbox for hamburger menu */
+        .menu-toggle {
+            display: none;
+        }
+
+        /* Hamburger Menu Icon */
+        .menu-icon {
+            display: none;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Show hamburger icon on smaller screens */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .nav-links li {
+                margin: 5px 0;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+
+            .menu-toggle:checked + .menu-icon + .nav-links {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <!-- Logo -->
+        <a href="#" class="logo">My Book Library</a>
+
+        <!-- Hamburger Menu Checkbox -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+        <!-- Hamburger Menu Icon -->
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Browse Books</a></li>
+            <li><a href="#">Genres</a></li>
+            <li><a href="#">Authors</a></li>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+
+        <!-- Login/Signup Button -->
+        <a href="#" class="login-btn">Login/Signup</a>
+    </nav>
+</body>
+</html>
+
+
+
+
+/* *{
+    margin: 0%;
+    padding: 0%;
+}
+.navbar{
+    background-color: #800020;
+    padding: 20px;
+    display: flex;
+    border-radius: 5px;
+   justify-content: space-evenly;
+    margin: 5px;
+}
+.navbar img{
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 40%;
+}
+.navbar input{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 500px;
+    height: 15px;
+}
+
+
+button {
+    float:right;
+    height: 30px;
+    width: 100px;
+    margin: 5px;
+    border-radius: 10px;
+  
+   
+}
+.btn a{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}*/
+
+<nav class="navbar">
+    <img src="WhatsApp Image 2024-08-13 at 9.34.21 AM.jpeg" alt="inkedages logo">
+    <input type="text" placeholder="search books...">
+    <img src="profilelogo.jpg" alt="profilelogo">
+    <div class="btn"> <button><a href="loginpage.html">signup</a></button> <button><a href="signup.html">Login</a></button> </div>
+</nav>

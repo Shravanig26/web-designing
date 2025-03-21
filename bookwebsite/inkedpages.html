@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INKED PAGES</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Style */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #800020; /* Burgundy */
+            padding: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            border-radius: 5PX;
+            margin: 5px;
+
+        }
+
+        /* Logo/Website Name */
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration:line-through;
+    
+        }
+
+        /* Navigation Links */
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 12px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-links li a:hover {
+            background-color: #990033; /* Lighter Burgundy */
+            border-radius: 4px;
+        }
+
+        /* Search Bar */
+        .search-bar input {
+            padding: 6px;
+            border: 1px solid black;
+            border-radius: 4px;
+            width: 250px;
+            height: 37px;
+        }
+        
+        button {
+            float:right;
+            height: 30px;
+            width: 100px;
+            margin: 5px;
+            border-radius: 10px;
+          
+           
+        }
+        .btn a{
+            font-size: 15px;
+            text-decoration:none;
+            font-style: oblique;
+            font-weight:bold;
+            color: black;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        
+        /*footer section*/
+        footer {
+            background-color:#800020;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            border-top: 1px solid ;
+            border-radius: 5px;
+            margin: 5px;
+        }
+        
+        .footer-section {
+            flex: 1;
+            padding: 10px;
+            margin-bottom: 20px;
+            /* Add margin-bottom to create gap between sections */
+        }
+        
+        .footer-section h4 {
+            margin-top: 0;
+            color: #FFFF;
+            font-family: Roboto, sans-serif;
+            margin-bottom: 8px;
+        }
+        
+        .footer-section p {
+            margin: 5px 0;
+            color: #FFFF;
+        }
+        
+        .footer-social {
+            flex-basis: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .footer-social a {
+            text-decoration: none;
+            color: #FFFF;
+            font-size: 20px;
+        }
+        
+        .footer-social a:hover {
+            color: #FFFF;
+        }
+        
+        .footer-bottom {
+            width: 100%;
+            text-align: center;
+            padding-top: 10px;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 20px;
+            color: #FFFF;
+        }
+        
+        @media (max-width: 600px) {
+            .footer-section {
+                flex-basis: 100%;
+                text-align: center;
+            }
+        }
+
+
+        .picture_continer{
+            margin-top: 20px;
+                         margin-left: 60px;
+                         margin-bottom: 10px;
+                        display: flex;    
+                        flex-wrap: wrap;
+                        grid-template-columns: auto auto auto auto;
+        } 
+        .pictures{
+                
+                margin-left: 30px;
+        }
+        .pictures img{
+            border: 5px solid black;
+            height: 250px;
+            width: 200px;
+            margin-top: 20px;
+        }
+        .pictures p{
+            text-align: center;
+            font-size:large;
+            font-weight: bold;
+            text-decoration: underline;
+            margin-bottom: 20px;
+       }
+      
+    </style>
+</head>
+<body>
+    <nav>
+        <!-- Logo -->
+        <a href="#" class="logo">INKED PAGES</a>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Browse Books</a></li>
+            <li><a href="#">Genres</a></li>
+            <li><a href="#">Authors</a></li>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+
+        <div class="btn"> <button><a href="signup.html">signup</a></button> <button><a href="loginpage.html">Login</a></button> </div>
+    </nav>
+    <section>
+    <img src="background1.jpg" style="width: 99%; height: 500px; margin-left: 8px; object-fit: fill; object-position: above;border-radius: 5px;">
+    </section>  
+      
+    <div class="picture_continer">
+        <div class="pictures">
+            <img src="it ends with us.jpg" alt="">
+            <p>It Ends With Us</p>
+        </div>
+        <div class="pictures">
+            <img src="it starts with us.jpg" alt="">
+            <p>It Starts With Us</p>
+        </div>
+        <div class="pictures">
+            <img src="haunting adeline 1.jpg" alt="">
+            <p>Haunting Adeline: 1</p>
+        </div>
+        <div class="pictures">
+            <img src="haunting adeline 2.jpg" alt="">
+            <p>Haunting Adeline: 2</p>
+        </div> <div class="pictures">
+            <img src="variety.jpg" alt="">
+            <p>Variety</p>
+        </div>
+        <div class="pictures">
+            <img src="ugly love.jpg" alt="">
+            <p>Ugly Love</p>
+        </div>
+        <div class="pictures">
+            <img src="king of wrath.jpg" alt="">
+            <p>King Of Wrath</p>
+        </div>
+        <div class="pictures">
+            <img src="wheres molly.jpg" alt="">
+            <p>Where's Molly</p>
+        </div>
+        <div class="pictures">
+            <img src="reminders of him.jpg" alt="">
+            <p>Reminders Of Him</p>
+        </div>
+        <div class="pictures">
+            <img src="love hypothesis.jpg" alt="">
+            <p>Love Hypothesis</p>
+        </div>
+        <div class="pictures">
+            <img src="crown of thorns.jpg" alt="">
+            <p>Crown Of Thorns</p>
+        </div>
+        <div class="pictures">
+            <img src="from blood and ash.jpg" alt="">
+            <p>From Blood And Ash</p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-section footer-contact">
+            <h4>Contact Us</h4>
+            <p>Email: support@inkedpages.in</p>
+            <p>Phone: +91 9826182654</p>
+            <p>Address: Sahar Airport Road, Andheri - Kurla Rd, near Mumbai International Airport, Andheri East, Mumbai, Maharashtra 400059, India</p>
+        </div>
+        <div class="footer-section footer-company">
+            <h4>Company</h4>
+            <p>About</p>
+            <p>Media Coverage</p>
+            <p>Blog</p>
+        </div>
+        <div class="footer-section footer-for-you">
+            <h4>For You</h4>
+            <p>Contact Us</p>
+            <p>Privacy Policy</p>
+            <p>Terms And Conditions</p>
+        </div>
+        <div class="footer-section footer-location">
+            <h4>Location</h4>
+            <p>Mumbai</p>
+            <p>Pune</p>
+            <p>Nashik</p>
+        </div>
+        <div class="footer-section footer-social">
+            <div class="footer-social">
+                <a href="#"><img src="facebooklogo.png" alt="Facebook" width="50px" height="50px" style="border-radius: 50%;"></a>
+                <a href="#"><img src="twitterlogo.png" alt="Twitter" width="50px" height="50px" style="border-radius: 50%;"></a>
+                <a href="#"><img src="instalogo.jpg" alt="Instagram" width="50px" height="50px" style="border-radius: 50%;"></a>
+                <a href="#"><img src="youtubelogo.png" alt="YouTube" width="50px" height="50px" style="border-radius: 50%;"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 inkedages. All rights reserved.</p>
+        </div>
+
+    </footer>  
+</body>
+</html>
